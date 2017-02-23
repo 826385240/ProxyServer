@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="epoll">
+      <UniqueIdentifier>{7c39c5f8-9499-4db6-8787-b39ba281cefa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sock4">
+      <UniqueIdentifier>{15064a5e-1ca7-4898-8be0-397f5a183bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{b16dcda0-108a-4c00-bc6d-af44250be20d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unix_domain">
+      <UniqueIdentifier>{223a4755-f9ba-4d68-b541-07024d31c514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="child_process">
+      <UniqueIdentifier>{b58cd808-3895-43cc-bcd8-79050a9a07e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="parent_process">
+      <UniqueIdentifier>{3f1df29e-8d41-4ca7-83fb-883e0f47e149}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="epoll\epoll.cpp">
+      <Filter>epoll</Filter>
+    </ClCompile>
+    <ClCompile Include="sock4\sock4.cpp">
+      <Filter>sock4</Filter>
+    </ClCompile>
+    <ClCompile Include="common\common.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="unix_domain\unix_domain.cpp">
+      <Filter>unix_domain</Filter>
+    </ClCompile>
+    <ClCompile Include="parent_process\parent_process.cpp" />
+    <ClCompile Include="child_process\child_process.cpp" />
+    <ClCompile Include="thread_manager\thread_manager.cpp" />
+    <ClCompile Include="sock4\buffer_manager.cpp" />
+    <ClCompile Include="traceback\traceback.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="epoll\epoll.h">
+      <Filter>epoll</Filter>
+    </ClInclude>
+    <ClInclude Include="sock4\sock4.h">
+      <Filter>sock4</Filter>
+    </ClInclude>
+    <ClInclude Include="common\common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="unix_domain\unix_domain.h">
+      <Filter>unix_domain</Filter>
+    </ClInclude>
+    <ClInclude Include="child_process\child_process.h">
+      <Filter>child_process</Filter>
+    </ClInclude>
+    <ClInclude Include="parent_process\parent_process.h" />
+    <ClInclude Include="thread_manager\thread_manager.h" />
+    <ClInclude Include="sock4\buffer_manager.h" />
+    <ClInclude Include="traceback\traceback.h" />
+  </ItemGroup>
+</Project>
