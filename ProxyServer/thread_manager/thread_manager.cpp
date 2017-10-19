@@ -158,7 +158,6 @@ void* thread_manger::thread_fun(void* arg)
 					p.analyse_socket_fd();
 					if ( false == p.is_analyse_success())
 					{
-						req_fd_to_sock4.erase(it_sock4);
 						epoll_mgr.epoll_ctl_del(epoll_ready_fd, EPOLLIN | EPOLLOUT | EPOLLERR);
 					}
 					else
